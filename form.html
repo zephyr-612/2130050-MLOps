@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is a Form</title>
+</head>
+<body>
+    <h2>REGISTRATION FORM</h2><br>
+    <form action="Submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">EMail:</label>
+        <input type="text" id="email" name="email" required><br>
+        
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+
+        <label>Account Type:</label><br>
+        <input type="radio" id="student" name="account_type" value="student" required>
+        <label for="student">Student</label><br>
+        <input type="radio" id="teacher" name="account_type" value="teacher" required>
+        <label for="teacher">Teacher</label><br>
+
+        <label>Hobbies:</label><br>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Reading</label><br>
+        <input type="checkbox" id="singing" name="hobbies" value="singing">
+        <label for="singing">Singing</label><br>
+        <input type="checkbox" id="cycling" name="hobbies" value="cycling">
+        <label for="cycling">Cycling</label><br><br>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
